@@ -1,0 +1,23 @@
+{
+    "version": "1.5.0",
+    "description": "IRC client for the Northfire network and any other IRC server",
+    "homepage": "https://northfire.dev/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kbargman/northfire-releases/releases/download/v1.5.0/Northfire-1.5.0-windows-setup.exe#/dl.7z",
+            "hash": "746e18ce32ba71ffe4f806c162068d59f48bdec38ca377c842d861f82e8cd1e2"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Recurse -Force"
+        ]
+    },
+    "shortcuts": [["Northfire.exe", "Northfire"]],
+    "checkver": { "github": "https://github.com/kbargman/northfire-releases" },
+    "autoupdate": {
+        "architecture": { "64bit": { "url": "https://github.com/kbargman/northfire-releases/releases/download/v$version/Northfire-$version-windows-setup.exe#/dl.7z" } }
+    }
+}
