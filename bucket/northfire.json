@@ -1,12 +1,12 @@
 {
-    "version": "1.6.3",
+    "version": "1.6.4",
     "description": "IRC client for the Northfire network and any other IRC server",
     "homepage": "https://northfire.dev/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kbargman/northfire-releases/releases/download/v1.6.3/Northfire-1.6.3-windows-setup.exe#/dl.7z",
-            "hash": "ae1653b268c9a7bdb1b66887b6a61c5a6944087b07726f56c8126f082bb96035"
+            "url": "https://github.com/kbargman/northfire-releases/releases/download/v1.6.4/Northfire-1.6.4-windows-setup.exe#/dl.7z",
+            "hash": "4e200e8dfbefa7250d06f1969cab52372ea660b51a5dd00a537cd71497176351"
         }
     },
     "installer": {
